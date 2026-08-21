@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlaskBlogApp — Hüseyin Çolak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a class="brand" href="../index.html#projects"><span class="dot"></span> huseyin@colak:~$</a>
+    <div class="navlinks">
+      <a href="../index.html#about">about</a>
+      <a href="../index.html#projects">projects</a>
+      <a href="../index.html#contact">contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="breadcrumb"><a href="../index.html">~/huseyin-colak</a> / <a href="../index.html#projects">projects</a> / flask-blog-app</div>
+
+  <header class="proj-hero">
+    <span class="pill">deployed</span>
+    <h1>FlaskBlogApp</h1>
+    <p class="sub">Python · Flask · Jinja Templates</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="https://github.com/00hsynclk/FlaskBlogApp" target="_blank" rel="noopener">GitHub'da Görüntüle ↗</a>
+      <a class="back-btn" href="../index.html#projects">← Tüm projelere dön</a>
+    </div>
+  </header>
+
+  <div class="proj-body">
+    <div>
+      <h2>proje hakkında</h2>
+      <p>FlaskBlogApp, Python'un hafif web framework'ü Flask ile geliştirilmiş bir blog uygulaması. Uygulamanın backend mantığı <code>Blog.py</code> dosyasında, arayüz katmanı ise <code>templates</code> klasöründeki Jinja şablonlarında yapılandırılmış.</p>
+      <p>Bu proje, Flask'ın route yapısı, şablon motoru (templating) ve backend-frontend ayrımı üzerine pratik yapmak amacıyla geliştirildi. CV'de belirtilen Flask ve backend geliştirme deneyimini somutlaştıran örnek projelerden biri.</p>
+
+      <h2>öne çıkanlar</h2>
+      <p>Minimal ve odaklı bir yapı: tek bir Python dosyası üzerinden route tanımları ve şablon render mantığı yönetiliyor. Flask ile hızlı prototipleme mantığını yansıtan bir çalışma.</p>
+    </div>
+
+    <aside class="spec-panel">
+      <div class="row"><span class="k">dil</span><span class="v">Python</span></div>
+      <div class="row"><span class="k">framework</span><span class="v">Flask</span></div>
+      <div class="row"><span class="k">şablon motoru</span><span class="v">Jinja</span></div>
+      <div class="row"><span class="k">tür</span><span class="v">Web Uygulaması</span></div>
+      <div class="row"><span class="k">repo</span><span class="v"><a href="https://github.com/00hsynclk/FlaskBlogApp" target="_blank" rel="noopener">00hsynclk/FlaskBlogApp</a></span></div>
+      <div class="note-box">$ git clone https://github.com/00hsynclk/FlaskBlogApp.git<br>$ cd FlaskBlogApp<br>$ pip install flask<br>$ python Blog.py</div>
+    </aside>
+  </div>
+
+  <footer>
+    <div><span class="live-dot">●</span> Hüseyin Çolak</div>
+    <div>© 2026 — status: operational</div>
+  </footer>
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>

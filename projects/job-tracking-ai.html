@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DjangoBlogGit — Hüseyin Çolak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a class="brand" href="../index.html#projects"><span class="dot"></span> huseyin@colak:~$</a>
+    <div class="navlinks">
+      <a href="../index.html#about">about</a>
+      <a href="../index.html#projects">projects</a>
+      <a href="../index.html#contact">contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="breadcrumb"><a href="../index.html">~/huseyin-colak</a> / <a href="../index.html#projects">projects</a> / job-tracking-ai</div>
+
+  <header class="proj-hero">
+    <span class="pill">being developed</span>
+    <h1>JobTrackingAI</h1>
+    <p class="sub">Python · Flutter/Dart · Docker · SQL · OpenAI</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="../index.html#projects" target="_blank" rel="noopener">Yakında</a>
+      <a class="back-btn" href="../index.html#projects">← Tüm projelere dön</a>
+    </div>
+  </header>
+
+  <div class="proj-body">
+    <div>
+    <h2>proje hakkında</h2>
+        <p>JobTrack AI, iş arama ve kariyer sürecini tek bir platformda yönetmek amacıyla geliştirilen, Django REST Framework ve Flutter tabanlı bir mobil uygulamadır. Proje; kullanıcı yönetimi, CV oluşturma ve yönetme, iş ilanı takibi ve yapay zeka destekli kariyer analizlerini modern bir backend ve mobil mimari üzerinde bir araya getiriyor.</p>
+
+        <p>Backend tarafında Python, Django ve Django REST Framework kullanılırken; PostgreSQL veritabanı, Redis, Celery ve Docker altyapısından yararlanılıyor. Mobil uygulama ise Dart ve Flutter ile Clean Architecture yaklaşımı kullanılarak geliştiriliyor. JWT tabanlı authentication, kullanıcı bazlı veri izolasyonu ve katmanlı servis mimarisi ile güvenli ve ölçeklenebilir bir yapı hedefleniyor.</p>
+
+    <h2>öne çıkanlar</h2>
+        <p>Projenin en önemli özelliklerinden biri, kullanıcıların oluşturduğu CV'leri yönetebilmesi, PDF olarak dışa aktarabilmesi ve yapay zeka ile analiz edebilmesi. İlerleyen aşamada AI destekli CV analizi, ATS değerlendirmesi ve CV ile iş ilanı arasındaki uyumluluk skorunun hesaplanması hedefleniyor.</p>
+    </div>
+
+    <aside class="spec-panel">
+        <div class="row">
+            <span class="k">dil</span>
+            <span class="v">Python · Dart</span>
+        </div>
+
+        <div class="row">
+            <span class="k">backend</span>
+            <span class="v">Django · DRF</span>
+        </div>
+
+        <div class="row">
+            <span class="k">mobile</span>
+            <span class="v">Flutter</span>
+        </div>
+
+        <div class="row">
+            <span class="k">veritabanı</span>
+            <span class="v">PostgreSQL</span>
+        </div>
+
+        <div class="row">
+            <span class="k">altyapı</span>
+            <span class="v">Docker · Redis · Celery</span>
+        </div>
+
+        <div class="row">
+            <span class="k">mimari</span>
+            <span class="v">Clean Architecture · REST API</span>
+        </div>
+
+        <div class="row">
+            <span class="k">tür</span>
+            <span class="v">Mobil Uygulama</span>
+        </div>
+
+        <div class="row">
+            <span class="k">repo</span>
+            <span class="v">
+            <a href="../index.html#projects" target="_blank" rel="noopener">Yakında...</a>
+            </span>
+        </div>
+
+        <div class="note-box">
+            $ git clone [repository-url]<br>
+            $ cd jobtrack-ai<br>
+            $ docker compose up --build<br>
+            $ cd mobile<br>
+            $ flutter pub get<br>
+            $ flutter run
+        </div>
+    </aside>
+  </div>
+
+  <footer>
+    <div><span class="live-dot">●</span> Hüseyin Çolak</div>
+    <div>© 2026 — status: operational</div>
+  </footer>
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>
