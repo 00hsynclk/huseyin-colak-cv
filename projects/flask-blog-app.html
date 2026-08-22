@@ -22,14 +22,14 @@
 </nav>
 
 <div class="wrap">
-  <div class="breadcrumb"><a href="../index.html">~/huseyin-colak</a> / <a href="../index.html#projects">projects</a> / flask-blog-app</div>
+  <div class="breadcrumb"><a href="../index.html">~/huseyin-colak</a> / <a href="../index.html#projects">projects</a> / marti-route-ai</div>
 
   <header class="proj-hero">
     <span class="pill">deployed</span>
-    <h1>FlaskBlogApp</h1>
-    <p class="sub">Python · Flask · Jinja Templates</p>
+    <h1>Martı Route AI</h1>
+    <p class="sub">TypeScript · REST API · Google Maps API · Rota Optimizasyonu · Konum Verisi İşleme</p>
     <div class="hero-actions">
-      <a class="btn primary" href="https://github.com/00hsynclk/FlaskBlogApp" target="_blank" rel="noopener">GitHub'da Görüntüle ↗</a>
+      <a class="btn primary" href="https://github.com/00hsynclk/marti-route-ai" target="_blank" rel="noopener">GitHub'da Görüntüle ↗</a>
       <a class="back-btn" href="../index.html#projects">← Tüm projelere dön</a>
     </div>
   </header>
@@ -37,20 +37,29 @@
   <div class="proj-body">
     <div>
       <h2>proje hakkında</h2>
-      <p>FlaskBlogApp, Python'un hafif web framework'ü Flask ile geliştirilmiş bir blog uygulaması. Uygulamanın backend mantığı <code>Blog.py</code> dosyasında, arayüz katmanı ise <code>templates</code> klasöründeki Jinja şablonlarında yapılandırılmış.</p>
-      <p>Bu proje, Flask'ın route yapısı, şablon motoru (templating) ve backend-frontend ayrımı üzerine pratik yapmak amacıyla geliştirildi. CV'de belirtilen Flask ve backend geliştirme deneyimini somutlaştıran örnek projelerden biri.</p>
-
-      <h2>öne çıkanlar</h2>
-      <p>Minimal ve odaklı bir yapı: tek bir Python dosyası üzerinden route tanımları ve şablon render mantığı yönetiliyor. Flask ile hızlı prototipleme mantığını yansıtan bir çalışma.</p>
+        <p>
+          Martı scooterlarının batarya değişim operasyonlarında daha verimli güzergâhlar oluşturmak amacıyla geliştirilmiş bir rota optimizasyon uygulamasıdır. TypeScript ile geliştirilen uygulama, API üzerinden alınan scooter konumlarını harita üzerinde görselleştirerek kullanıcının başlangıç noktasına göre en uygun ziyaret sırasını belirler.
+        </p>
+        <p>
+          Projenin temelinde, başlangıç noktasına en yakın scooterlardan başlayarak dışa doğru ilerleyen ve dönüş güzergâhında tekrar yakın konumdaki scooterları kapsayan özel bir <strong>“hilal rota”</strong> algoritması bulunuyor. Oluşturulan rota, Google Maps altyapısı kullanılarak gerçek yol güzergâhına dönüştürülüyor. Böylece gereksiz yön değişiklikleri ve yol sapmaları azaltılarak daha düzenli ve verimli bir rota elde ediliyor.
+        </p>
+        <h2>öne çıkanlar</h2>
+        <p>
+          API üzerinden gerçek zamanlı konum verilerinin alınması, scooterların mesafe ve konumlarına göre analiz edilmesi ve özel rota optimizasyon algoritmasıyla ziyaret sırasının belirlenmesi projenin temel özelliklerini oluşturuyor. Google Maps entegrasyonu sayesinde hesaplanan rota gerçek yol ağı üzerinde kullanıcıya uygulanabilir bir güzergâh olarak sunuluyor.
+        </p>
+        <p>
+          Proje; <strong>TypeScript, API entegrasyonu, konum verisi işleme, algoritmik rota optimizasyonu ve Google Maps</strong> teknolojilerinin bir arada kullanıldığı, gerçek bir operasyonel problemi çözmeye odaklanan bir çalışma olarak geliştirildi.
+        </p>
     </div>
 
     <aside class="spec-panel">
-      <div class="row"><span class="k">dil</span><span class="v">Python</span></div>
-      <div class="row"><span class="k">framework</span><span class="v">Flask</span></div>
-      <div class="row"><span class="k">şablon motoru</span><span class="v">Jinja</span></div>
-      <div class="row"><span class="k">tür</span><span class="v">Web Uygulaması</span></div>
-      <div class="row"><span class="k">repo</span><span class="v"><a href="https://github.com/00hsynclk/FlaskBlogApp" target="_blank" rel="noopener">00hsynclk/FlaskBlogApp</a></span></div>
-      <div class="note-box">$ git clone https://github.com/00hsynclk/FlaskBlogApp.git<br>$ cd FlaskBlogApp<br>$ pip install flask<br>$ python Blog.py</div>
+      <div class="row"><span class="k">dil</span><span class="v">TypeScript</span></div>
+      <div class="row"><span class="k">api</span><span class="v">REST API</span></div>
+      <div class="row"><span class="k">harita</span><span class="v">Google Maps</span></div>
+      <div class="row"><span class="k">algoritma</span><span class="v">Rota Optimizasyonu</span></div>
+      <div class="row"><span class="k">tür</span><span class="v">Mobil Uygulama Entegrasyonu</span></div>
+      <div class="row"><span class="k">repo</span><span class="v"><a href="https://github.com/00hsynclk/marti-route-ai" target="_blank" rel="noopener">00hsynclk/marti-route-ai</a></span></div>
+      <div class="note-box">$ git clone https://github.com/00hsynclk/marti-route-ai.git<br>$ cd marti-route-ai<br>$ npm install<br>$ npm run dev</div>
     </aside>
   </div>
 
