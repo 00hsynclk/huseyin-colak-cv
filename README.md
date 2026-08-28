@@ -2,7 +2,7 @@
 
 Kişisel portföy ve CV bilgilerimi sergilemek için geliştirdiğim, modern ve responsive bir web sitesi.
 
-🌐 **Live Demo:** GitHub Pages üzerinden yayında
+🌐 **Live Demo:** [GitHub Pages üzerinden yayında](https://00hsynclk.github.io/huseyin-colak-cv/)
 👨‍💻 **Developer:** Hüseyin Çolak
 
 ---
