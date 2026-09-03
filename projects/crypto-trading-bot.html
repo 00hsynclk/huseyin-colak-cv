@@ -1,390 +1,104 @@
 <!DOCTYPE html>
-
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Crypto Trading Bot — Hüseyin Çolak</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="../style.css">
 </head>
-
 <body>
 
 <nav class="topnav">
   <div class="topnav-inner">
-
-```
-<a class="brand" href="../index.html#projects">
-  <span class="dot"></span>
-  huseyin@colak:~$
-</a>
-
-<div class="navlinks">
-  <a href="../index.html#about">about</a>
-  <a href="../index.html#projects">projects</a>
-  <a href="../index.html#contact">contact</a>
-</div>
-```
-
+    <a class="brand" href="../index.html#projects"><span class="dot"></span> huseyin@colak:~$</a>
+    <div class="navlinks">
+      <a href="../index.html#about">about</a>
+      <a href="../index.html#projects">projects</a>
+      <a href="../index.html#contact">contact</a>
+    </div>
   </div>
 </nav>
 
 <div class="wrap">
-
-  <div class="breadcrumb">
-    <a href="../index.html">~/huseyin-colak</a>
-    /
-    <a href="../index.html#projects">projects</a>
-    /
-    Crypto Trading Bot
-  </div>
-
-  <!-- HERO -->
+  <div class="breadcrumb"><a href="../index.html">~/huseyin-colak</a> / <a href="../index.html#projects">projects</a> / Crypto Trading Bot</div>
 
   <header class="proj-hero">
-
-```
-<span class="pill">being developed</span>
-
-<h1>Crypto Trading Bot</h1>
-
-<p class="sub">
-  Python · FastAPI · React · Machine Learning · Binance
-</p>
-
-
-<div class="hero-actions">
-
-  <a
-    class="btn primary"
-    href="https://github.com/00hsynclk/Crypto-Trading-Bot"
-    target="_blank"
-    rel="noopener"
-  >
-    GitHub'da Görüntüle ↗
-  </a>
-
-  <a
-    class="back-btn"
-    href="../index.html#projects"
-  >
-    ← Tüm projelere dön
-  </a>
-
-</div>
-```
-
+    <span class="pill">being developed</span>
+    <h1>Crypto Trading Bot</h1>
+    <p class="sub">Python · FastAPI · React · Machine Learning · Binance</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="https://github.com/00hsynclk/Crypto-Trading-Bot" target="_blank" rel="noopener">GitHub'da Görüntüle ↗</a>
+      <a class="back-btn" href="../index.html#projects">← Tüm projelere dön</a>
+    </div>
   </header>
 
-  <!-- PROJECT CONTENT -->
-
   <div class="proj-body">
+    <div>
+      <h2>proje hakkında</h2>
+      <p>Crypto Trading Bot, kripto para piyasalarının analiz edilmesi, yapay zeka destekli işlem sinyallerinin üretilmesi, risk yönetimi, otomatik emir yürütme ve gerçek zamanlı portföy takibi amacıyla geliştirdiğim modüler bir alım-satım platformudur.</p>
+      <p>Proje; backend, makine öğrenmesi, teknik analiz, API entegrasyonları, veri işleme ve modern web arayüzü bileşenlerini tek bir sistem içerisinde bir araya getiriyor. Sistem mimarisi, piyasa verisinin alınmasından işlem kararının üretilmesine ve emrin borsa API'sine iletilmesine kadar uçtan uca bir işlem hattı üzerine kurulu.</p>
 
-```
-<div>
+      <h2>çalışma prensibi</h2>
+      <p>Sistem, piyasa verilerini analiz ederek teknik göstergeler, volatilite verileri, piyasa rejimi ve korelasyon gibi çeşitli özellikler oluşturur. Bu veriler makine öğrenmesi tabanlı karar mekanizmasına aktarılır.</p>
+      <p>Üretilen işlem sinyali doğrudan emir olarak gönderilmeden önce risk yönetimi katmanından geçirilir. Pozisyon büyüklüğü, stop-loss, take-profit, günlük risk limitleri ve risk/ödül oranı gibi kontroller değerlendirilir. Uygun bulunan işlemler daha sonra execution router üzerinden borsa API'lerine iletilir.</p>
+      <p>İşlem ve sistem verileri veritabanında saklanırken, REST API ve WebSocket bağlantıları üzerinden React tabanlı dashboard'a gerçek zamanlı olarak aktarılır.</p>
 
-  <h2>proje hakkında</h2>
+      <h2>öne çıkan özellikler</h2>
+      <p><strong>Yapay zeka destekli karar mekanizması:</strong> Random Forest ve Gradient Boosting modelleri kullanılarak piyasa verileri üzerinden işlem sinyalleri üretilecek şekilde bir makine öğrenmesi pipeline'ı tasarlandı. Model eğitiminde veri ön işleme, train/test split, Stratified K-Fold doğrulaması ve GridSearchCV tabanlı hiperparametre optimizasyonu kullanılıyor.</p>
+      <p><strong>Teknik analiz:</strong> RSI, SMA, ATR, volatilite, fiyat momentumu, piyasa rejimi ve korelasyon analizi gibi çeşitli göstergeler işlem karar mekanizmasına veri sağlıyor.</p>
+      <p><strong>Dinamik risk yönetimi:</strong> Pozisyon büyüklüğü hesaplama, volatiliteye göre risk ayarlama, stop-loss ve take-profit hesaplama, maksimum drawdown takibi, günlük kayıp limitleri ve portföy risk kontrolleri sistemin temel bileşenleri arasında yer alıyor.</p>
+      <p><strong>Backtesting:</strong> Stratejilerin geçmiş piyasa verileri üzerinde test edilmesini sağlayan bir backtest motoru bulunuyor. Total Return, Net P/L, Win Rate, Maximum Drawdown, Sharpe Ratio, Volatility, Value at Risk ve Profit Factor gibi performans metrikleri hesaplanabiliyor.</p>
+      <p><strong>Binance entegrasyonu:</strong> Sistem Binance Spot ve Binance USDⓈ-M Futures işlem akışlarını destekleyecek şekilde tasarlandı. Market ve limit emirleri, stop-loss, take-profit, açık emir yönetimi, pozisyon takibi ve testnet senaryoları proje kapsamına dahil edildi.</p>
 
-  <p>
-    Crypto Trading Bot, kripto para piyasalarının analiz edilmesi,
-    yapay zeka destekli işlem sinyallerinin üretilmesi, risk yönetimi,
-    otomatik emir yürütme ve gerçek zamanlı portföy takibi amacıyla
-    geliştirdiğim modüler bir alım-satım platformudur.
-  </p>
+      <h2>gerçek zamanlı dashboard</h2>
+      <p>React ve TypeScript kullanılarak geliştirilen web tabanlı dashboard, botun ve portföyün gerçek zamanlı olarak izlenmesini sağlıyor. Kullanıcı; işlem geçmişi, açık emirler, performans metrikleri, yapay zeka sinyalleri, piyasa verileri, kâr/zarar bilgileri ve risk durumunu tek bir panel üzerinden takip edebiliyor.</p>
+      <p>Gerçek zamanlı veri iletişimi WebSocket altyapısı üzerinden yürütülüyor. Bağlantı kopmalarına karşı yeniden bağlanma ve bağlantı durumunu izlemeye yönelik mekanizmalar da mimariye dahil edildi.</p>
 
-  <p>
-    Proje; backend, makine öğrenmesi, teknik analiz, API entegrasyonları,
-    veri işleme ve modern web arayüzü bileşenlerini tek bir sistem
-    içerisinde bir araya getiriyor. Sistem mimarisi, piyasa verisinin
-    alınmasından işlem kararının üretilmesine ve emrin borsa API'sine
-    iletilmesine kadar uçtan uca bir işlem hattı üzerine kurulu.
-  </p>
+      <h2>mimari yaklaşım</h2>
+      <p>Proje, tek bir script içerisinde tüm işlemleri gerçekleştirmek yerine modüler bir mimari ile geliştirildi. Analitik işlemler, API yönetimi, borsa entegrasyonları, makine öğrenmesi, risk yönetimi, güvenlik, bildirimler, performans raporlama ve frontend bileşenleri ayrı modüller halinde organize edildi.</p>
+      <p>Bu yaklaşım sayesinde proje büyüdükçe yeni özelliklerin sisteme eklenmesi ve mevcut bileşenlerin bağımsız olarak geliştirilmesi daha sürdürülebilir hale geliyor.</p>
 
+      <h2>teknik olarak neler kullandım?</h2>
+      <p>Backend tarafında Python ve FastAPI kullanılarak REST API servisleri oluşturuldu. Veri analizi ve makine öğrenmesi işlemlerinde Pandas, NumPy ve Scikit-learn kullanılırken; deneysel derin öğrenme çalışmalarında TensorFlow/Keras tabanlı LSTM ve GRU bileşenleri değerlendirildi.</p>
+      <p>Frontend tarafında React ve TypeScript kullanıldı. Dashboard bileşenlerinde veri görselleştirme ve kullanıcı deneyimi için modern frontend kütüphaneleri kullanılarak gerçek zamanlı bir kontrol paneli mimarisi oluşturuldu.</p>
 
-  <h2>çalışma prensibi</h2>
+      <h2>güvenlik ve dayanıklılık</h2>
+      <p>Finansal API entegrasyonlarında güvenlik kritik olduğu için proje, hassas kimlik bilgilerinin environment değişkenleri üzerinden yönetilmesi prensibiyle tasarlandı. API anahtarlarının repository içerisinde saklanmaması için <code>.env.template</code> yapısı kullanılıyor.</p>
+      <p>Sistem ayrıca API iletişiminde rate-limit farkındalığı, caching, retry, exponential backoff, bağlantı doğrulama ve hata yönetimi gibi mekanizmalar içeriyor. Güvenlik tarafında ise şifreleme, anahtar türetme, doğrulama, rate limiting ve güvenlik loglama bileşenleri üzerinde çalışıldı.</p>
 
-  <p>
-    Sistem, piyasa verilerini analiz ederek teknik göstergeler,
-    volatilite verileri, piyasa rejimi ve korelasyon gibi çeşitli
-    özellikler oluşturur. Bu veriler makine öğrenmesi tabanlı karar
-    mekanizmasına aktarılır.
-  </p>
+      <h2>proje yapısı</h2>
+      <p>Repository; analitik işlemler, backend servisleri, frontend, borsa entegrasyonları, geçmiş veriler, makine öğrenmesi modelleri, bildirim sistemleri, paralel işleme, performans raporlama, güvenlik ve test modülleri şeklinde organize edilmiştir.</p>
+      <p>Özellikle büyük ölçekli bir uygulama geliştirme deneyimi kazanmak amacıyla, farklı sorumluluklara sahip bileşenleri birbirinden ayıran modüler bir yapı tercih edildi.</p>
 
-  <p>
-    Üretilen işlem sinyali doğrudan emir olarak gönderilmeden önce
-    risk yönetimi katmanından geçirilir. Pozisyon büyüklüğü, stop-loss,
-    take-profit, günlük risk limitleri ve risk/ödül oranı gibi
-    kontroller değerlendirilir. Uygun bulunan işlemler daha sonra
-    execution router üzerinden borsa API'lerine iletilir.
-  </p>
+      <h2>bu projede kazandığım deneyimler</h2>
+      <p>Crypto Trading Bot benim için yalnızca bir trading uygulaması değil; backend geliştirme, REST API tasarımı, makine öğrenmesi, asenkron programlama, üçüncü parti API entegrasyonları, veritabanı yönetimi, risk modelleme, WebSocket iletişimi, Docker ve modern frontend teknolojilerini birlikte deneyimlediğim kapsamlı bir yazılım mühendisliği projesidir.</p>
+      <p>Proje geliştirme sürecinde özellikle modüler sistem tasarımı, hata toleranslı API iletişimi, güvenli credential yönetimi ve gerçek zamanlı sistemlerin mimarisi üzerine çalışma fırsatı buldum.</p>
+    </div>
 
-  <p>
-    İşlem ve sistem verileri veritabanında saklanırken, REST API ve
-    WebSocket bağlantıları üzerinden React tabanlı dashboard'a gerçek
-    zamanlı olarak aktarılır.
-  </p>
-
-
-  <h2>öne çıkan özellikler</h2>
-
-  <p>
-    <strong>Yapay zeka destekli karar mekanizması:</strong>
-    Random Forest ve Gradient Boosting modelleri kullanılarak piyasa
-    verileri üzerinden işlem sinyalleri üretilecek şekilde bir makine
-    öğrenmesi pipeline'ı tasarlandı. Model eğitiminde veri ön işleme,
-    train/test split, Stratified K-Fold doğrulaması ve GridSearchCV
-    tabanlı hiperparametre optimizasyonu kullanılıyor.
-  </p>
-
-  <p>
-    <strong>Teknik analiz:</strong>
-    RSI, SMA, ATR, volatilite, fiyat momentumu, piyasa rejimi ve
-    korelasyon analizi gibi çeşitli göstergeler işlem karar mekanizmasına
-    veri sağlıyor.
-  </p>
-
-  <p>
-    <strong>Dinamik risk yönetimi:</strong>
-    Pozisyon büyüklüğü hesaplama, volatiliteye göre risk ayarlama,
-    stop-loss ve take-profit hesaplama, maksimum drawdown takibi,
-    günlük kayıp limitleri ve portföy risk kontrolleri sistemin temel
-    bileşenleri arasında yer alıyor.
-  </p>
-
-  <p>
-    <strong>Backtesting:</strong>
-    Stratejilerin geçmiş piyasa verileri üzerinde test edilmesini sağlayan
-    bir backtest motoru bulunuyor. Total Return, Net P/L, Win Rate,
-    Maximum Drawdown, Sharpe Ratio, Volatility, Value at Risk ve
-    Profit Factor gibi performans metrikleri hesaplanabiliyor.
-  </p>
-
-  <p>
-    <strong>Binance entegrasyonu:</strong>
-    Sistem Binance Spot ve Binance USDⓈ-M Futures işlem akışlarını
-    destekleyecek şekilde tasarlandı. Market ve limit emirleri,
-    stop-loss, take-profit, açık emir yönetimi, pozisyon takibi ve
-    testnet senaryoları proje kapsamına dahil edildi.
-  </p>
-
-
-  <h2>gerçek zamanlı dashboard</h2>
-
-  <p>
-    React ve TypeScript kullanılarak geliştirilen web tabanlı dashboard,
-    botun ve portföyün gerçek zamanlı olarak izlenmesini sağlıyor.
-    Kullanıcı; işlem geçmişi, açık emirler, performans metrikleri,
-    yapay zeka sinyalleri, piyasa verileri, kâr/zarar bilgileri ve
-    risk durumunu tek bir panel üzerinden takip edebiliyor.
-  </p>
-
-  <p>
-    Gerçek zamanlı veri iletişimi WebSocket altyapısı üzerinden
-    yürütülüyor. Bağlantı kopmalarına karşı yeniden bağlanma ve
-    bağlantı durumunu izlemeye yönelik mekanizmalar da mimariye
-    dahil edildi.
-  </p>
-
-
-  <h2>mimari yaklaşım</h2>
-
-  <p>
-    Proje, tek bir script içerisinde tüm işlemleri gerçekleştirmek yerine
-    modüler bir mimari ile geliştirildi. Analitik işlemler, API yönetimi,
-    borsa entegrasyonları, makine öğrenmesi, risk yönetimi, güvenlik,
-    bildirimler, performans raporlama ve frontend bileşenleri ayrı
-    modüller halinde organize edildi.
-  </p>
-
-  <p>
-    Bu yaklaşım sayesinde proje büyüdükçe yeni özelliklerin sisteme
-    eklenmesi ve mevcut bileşenlerin bağımsız olarak geliştirilmesi
-    daha sürdürülebilir hale geliyor.
-  </p>
-
-
-  <h2>teknik olarak neler kullandım?</h2>
-
-  <p>
-    Backend tarafında Python ve FastAPI kullanılarak REST API servisleri
-    oluşturuldu. Veri analizi ve makine öğrenmesi işlemlerinde Pandas,
-    NumPy ve Scikit-learn kullanılırken; deneysel derin öğrenme
-    çalışmalarında TensorFlow/Keras tabanlı LSTM ve GRU bileşenleri
-    değerlendirildi.
-  </p>
-
-  <p>
-    Frontend tarafında React ve TypeScript kullanıldı. Dashboard
-    bileşenlerinde veri görselleştirme ve kullanıcı deneyimi için
-    modern frontend kütüphaneleri kullanılarak gerçek zamanlı bir
-    kontrol paneli mimarisi oluşturuldu.
-  </p>
-
-
-  <h2>güvenlik ve dayanıklılık</h2>
-
-  <p>
-    Finansal API entegrasyonlarında güvenlik kritik olduğu için proje,
-    hassas kimlik bilgilerinin environment değişkenleri üzerinden
-    yönetilmesi prensibiyle tasarlandı. API anahtarlarının repository
-    içerisinde saklanmaması için <code>.env.template</code> yapısı
-    kullanılıyor.
-  </p>
-
-  <p>
-    Sistem ayrıca API iletişiminde rate-limit farkındalığı, caching,
-    retry, exponential backoff, bağlantı doğrulama ve hata yönetimi
-    gibi mekanizmalar içeriyor. Güvenlik tarafında ise şifreleme,
-    anahtar türetme, doğrulama, rate limiting ve güvenlik loglama
-    bileşenleri üzerinde çalışıldı.
-  </p>
-
-
-  <h2>proje yapısı</h2>
-
-  <p>
-    Repository; analitik işlemler, backend servisleri, frontend,
-    borsa entegrasyonları, geçmiş veriler, makine öğrenmesi modelleri,
-    bildirim sistemleri, paralel işleme, performans raporlama,
-    güvenlik ve test modülleri şeklinde organize edilmiştir.
-  </p>
-
-  <p>
-    Özellikle büyük ölçekli bir uygulama geliştirme deneyimi kazanmak
-    amacıyla, farklı sorumluluklara sahip bileşenleri birbirinden
-    ayıran modüler bir yapı tercih edildi.
-  </p>
-
-
-  <h2>bu projede kazandığım deneyimler</h2>
-
-  <p>
-    Crypto Trading Bot benim için yalnızca bir trading uygulaması değil;
-    backend geliştirme, REST API tasarımı, makine öğrenmesi,
-    asenkron programlama, üçüncü parti API entegrasyonları,
-    veritabanı yönetimi, risk modelleme, WebSocket iletişimi,
-    Docker ve modern frontend teknolojilerini birlikte deneyimlediğim
-    kapsamlı bir yazılım mühendisliği projesidir.
-  </p>
-
-  <p>
-    Proje geliştirme sürecinde özellikle modüler sistem tasarımı,
-    hata toleranslı API iletişimi, güvenli credential yönetimi ve
-    gerçek zamanlı sistemlerin mimarisi üzerine çalışma fırsatı
-    buldum.
-  </p>
-
-</div>
-
-
-
-<!-- SPEC PANEL -->
-
-<aside class="spec-panel">
-
-  <div class="row">
-    <span class="k">alan</span>
-    <span class="v">FinTech · AI</span>
+    <aside class="spec-panel">
+      <div class="row"><span class="k">alan</span><span class="v">FinTech · AI</span></div>
+      <div class="row"><span class="k">backend</span><span class="v">Python · FastAPI</span></div>
+      <div class="row"><span class="k">frontend</span><span class="v">React · TypeScript</span></div>
+      <div class="row"><span class="k">ai/ml</span><span class="v">Scikit-learn · TensorFlow</span></div>
+      <div class="row"><span class="k">veri</span><span class="v">Pandas · NumPy · SQLite</span></div>
+      <div class="row"><span class="k">api</span><span class="v">REST · WebSocket</span></div>
+      <div class="row"><span class="k">borsa</span><span class="v">Binance Spot · Futures</span></div>
+      <div class="row"><span class="k">özellikler</span><span class="v">AI · Backtesting · Risk Management</span></div>
+      <div class="row"><span class="k">altyapı</span><span class="v">Docker · Async Processing</span></div>
+      <div class="row"><span class="k">durum</span><span class="v">Being Developed</span></div>
+      <div class="row"><span class="k">repo</span><span class="v"><a href="https://github.com/00hsynclk/Crypto-Trading-Bot" target="_blank" rel="noopener">00hsynclk/Crypto-Trading-Bot</a></span></div>
+      <div class="note-box">$ git clone https://github.com/00hsynclk/Crypto-Trading-Bot.git<br>$ cd Crypto-Trading-Bot<br>$ pip install -r requirements.txt<br># detaylı kurulum için repository dokümantasyonuna bakın</div>
+    </aside>
   </div>
-
-  <div class="row">
-    <span class="k">backend</span>
-    <span class="v">Python · FastAPI</span>
-  </div>
-
-  <div class="row">
-    <span class="k">frontend</span>
-    <span class="v">React · TypeScript</span>
-  </div>
-
-  <div class="row">
-    <span class="k">ai/ml</span>
-    <span class="v">Scikit-learn · TensorFlow</span>
-  </div>
-
-  <div class="row">
-    <span class="k">veri</span>
-    <span class="v">Pandas · NumPy · SQLite</span>
-  </div>
-
-  <div class="row">
-    <span class="k">api</span>
-    <span class="v">REST · WebSocket</span>
-  </div>
-
-  <div class="row">
-    <span class="k">borsa</span>
-    <span class="v">Binance Spot · Futures</span>
-  </div>
-
-  <div class="row">
-    <span class="k">özellikler</span>
-    <span class="v">AI · Backtesting · Risk Management</span>
-  </div>
-
-  <div class="row">
-    <span class="k">altyapı</span>
-    <span class="v">Docker · Async Processing</span>
-  </div>
-
-  <div class="row">
-    <span class="k">durum</span>
-    <span class="v">Being Developed</span>
-  </div>
-
-  <div class="row">
-    <span class="k">repo</span>
-
-    <span class="v">
-      <a
-        href="https://github.com/00hsynclk/Crypto-Trading-Bot"
-        target="_blank"
-        rel="noopener"
-      >
-        00hsynclk/Crypto-Trading-Bot
-      </a>
-    </span>
-
-  </div>
-
-
-  <div class="note-box">
-    $ git clone https://github.com/00hsynclk/Crypto-Trading-Bot.git<br>
-    $ cd Crypto-Trading-Bot<br>
-    $ pip install -r requirements.txt<br>
-    # detaylı kurulum için repository dokümantasyonuna bakın
-  </div>
-
-</aside>
-```
-
-  </div>
-
-  <!-- FOOTER -->
 
   <footer>
-
-```
-<div>
-  <span class="live-dot">●</span>
-  Hüseyin Çolak
-</div>
-
-<div>
-  © 2026 — status: operational
-</div>
-```
-
+    <div><span class="live-dot">●</span> Hüseyin Çolak</div>
+    <div>© 2026 — status: operational</div>
   </footer>
-
 </div>
 
 <script src="../script.js"></script>
-
 </body>
 </html>
